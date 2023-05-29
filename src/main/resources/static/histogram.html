@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Histogram</title>
+    <link rel="stylesheet" href="histogram.css">
+    <script src="calculate.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="half-width">
+            <h3>Lower bound</h3>
+            <table class="table">
+                <tr>
+                    <td>Max</td>
+                    <td><input class="input-left" type="text" size="4" id="val_max" value="100"></td>
+                </tr>
+                <tr>
+                    <td>A+</td>
+                    <td><input class="input-left" type="text" size="4" id="val_a+" value="95"></td>
+                </tr>
+                <tr>
+                    <td>A</td>
+                    <td><input class="input-left" type="text" size="4" id="val_a" value="90"></td>
+                </tr>
+                <tr>
+                    <td>A-</td>
+                    <td><input class="input-left" type="text" size="4" id="val_a-" value="85"></td>
+                </tr>
+                <tr>
+                    <td>B+</td>
+                    <td><input class="input-left" type="text" size="4" id="val_b+" value="80"></td>
+                </tr>
+                <tr>
+                    <td>B</td>
+                    <td><input class="input-left" type="text" size="4" id="val_b" value="75"></td>
+                </tr>
+                <tr>
+                    <td>B-</td>
+                    <td><input class="input-left" type="text" size="4" id="val_b-" value="70"></td>
+                </tr>
+                <tr>
+                    <td>C+</td>
+                    <td><input class="input-left" type="text" size="4" id="val_c+" value="65"></td>
+                </tr>
+                <tr>
+                    <td>C</td>
+                    <td><input class="input-left" type="text" size="4" id="val_c" value="60"></td>
+                </tr>
+                <tr>
+                    <td>C-</td>
+                    <td><input class="input-left" type="text" size="4" id="val_c-" value="55"></td>
+                </tr>
+                <tr>
+                    <td>D</td>
+                    <td><input class="input-left" type="text" size="4" id="val_d" value="50"></td>
+                </tr>
+                <tr>
+                    <td>F</td>
+                    <td><input class="input-left" type="text" size="4" id="val_f" value="0"></td>
+                </tr>
+            </table>
+        </div>
+        <div class="half-width flex-column">
+            <div class="full-width top">
+                <h3>Histogram</h3>
+                <table class="table histogram">
+                    <tr>
+                        <td>A+</td>
+                        <td id="hist_a+"></td>
+                    </tr>
+                    <tr>
+                        <td>A</td>
+                        <td id="hist_a"></td>
+                    </tr>
+                    <tr>
+                        <td>A-</td>
+                        <td id="hist_a-"></td>
+                    </tr>
+                    <tr>
+                        <td>B+</td>
+                        <td id="hist_b+"></td>
+                    </tr>
+                    <tr>
+                        <td>B</td>
+                        <td id="hist_b"></td>
+                    </tr>
+                    <tr>
+                        <td>B-</td>
+                        <td id="hist_b-"></td>
+                    </tr>
+                    <tr>
+                        <td>C+</td>
+                        <td id="hist_c+"></td>
+                    </tr>
+                    <tr>
+                        <td>C</td>
+                        <td id="hist_c"></td>
+                    </tr>
+                    <tr>
+                        <td>C-</td>
+                        <td id="hist_c-"></td>
+                    </tr>
+                    <tr>
+                        <td>D</td>
+                        <td id="hist_d"></td>
+                    </tr>
+                    <tr>
+                        <td>F</td>
+                        <td id="hist_f"></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="full-width bottom">
+                New Grade:<input type="text" id="grade">
+                <button id="submit">Submit</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
