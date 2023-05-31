@@ -1,7 +1,4 @@
 
-//remove given grades
-//layout on mobile screen
-
 //given grades
 var grades = [65.95, 56.98, 78.62, 96.1, 90.3, 72.24, 92.34, 60.00, 81.43, 86.22, 88.33, 9.03,
     49.93, 52.34, 53.11, 50.10, 88.88, 55.32, 55.69, 61.68, 70.44, 70.54, 90.0, 71.11, 80.01];
@@ -65,7 +62,9 @@ for(let i=0;i<inputs.length;i++){
         for(let j=0;j<boundaryID.length;j++){
             document.getElementById(boundaryID[j]).style.border = '';
             //check if input is not a number
-            if(isNaN(document.getElementById(boundaryID[j]).value)){
+            //check if less than 0
+            if((isNaN(document.getElementById(boundaryID[j]).value)) 
+            || (Number(document.getElementById(boundaryID[j]).value) < 0)){
                 document.getElementById(boundaryID[j]).style.border = '2px solid rgb(224,67,70)';
                 hasError = true;
                 continue;
@@ -99,8 +98,9 @@ submitButton.addEventListener('click', function() {
     if(gradeInput.value !== '')
         //checking if grade <= max value
         //check if input is not a number
+        //check if >= 0
         if(Number(gradeInput.value) <= Number(document.getElementById('val_max').value)
-        && !isNaN(gradeInput.value)){
+        && !isNaN(gradeInput.value) && Number(gradeInput.value) >= 0){
             grades.push(Number(gradeInput.value));
             gradeInput.value = '';
             gradeInput.style.border = "";
