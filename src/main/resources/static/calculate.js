@@ -1,7 +1,6 @@
 
-//BUG: for boundary n it checks if n+k (above) are greater but doesn't check if boundary n-m (below) is lower, so 65,100,75 is considered good 
-//BUG: string can be entered into boundary field
-//DEPLOY
+//remove given grades
+//layout on mobile screen
 
 //given grades
 var grades = [65.95, 56.98, 78.62, 96.1, 90.3, 72.24, 92.34, 60.00, 81.43, 86.22, 88.33, 9.03,

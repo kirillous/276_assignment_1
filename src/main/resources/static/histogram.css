@@ -71,4 +71,24 @@ table{
     height: 30px;
     font-size: 14px;
 }
+@media screen and (max-width: 768px) {
+    .container{
+        height: 90vh;
+    }
+    .top , .bottom{
+        flex: 1;
+        padding: 0.5vw;
+    }
+    table{
+        height: 45%;
+        font-size: 0.75em;
+    }
+    .histogram{
+        height: 50%;
+        font-size: 0.50em;
+    }
+    h3{
+        font-size: small;
+    }
+}
 
